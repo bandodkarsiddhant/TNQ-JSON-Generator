@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JSON Table</title>
+  </head>
+  <body>
+    <header>
+      <select name="filter" id="filter">
+        <option value="">select</option>
+        <option value="retired">retired</option>
+        <option value="active">active</option>
+        <option value="unknown">unknown</option>
+        <option value="destroyed">destroyed</option>
+      </select>
+
+      <button id="loadBtn">Load</button>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Capsule ID</th>
+          <th>No of missions</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
